@@ -1,4 +1,4 @@
-Here is an ontology of locations. Information is included on countries, languages, currency, neighbors, ISO codes, area in sq km, and population.
+Here is an ontology of locations. Information is included on countries, currency, neighbors, ISO codes, area in sq km, and population.
 
 CountryInfo.txt is the source file from GeoNames.org
 
