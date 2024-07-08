@@ -4,4 +4,4 @@ CountryInfo.txt is the source file from GeoNames.org. (Downloaded October 2023.)
 
 Locations.ttl is the Turtle file for the ontology.
 
-CountryInfoProject.ipynb is the Jupyter notebook process used to create the ontology.
+CountryInfoProject.ipynb is the Jupyter notebook file used to create the ontology.
