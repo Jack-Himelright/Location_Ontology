@@ -9,7 +9,10 @@
 
 <urn:absolute:CountryInfoOntology> rdf:type owl:Ontology ;
                                     owl:versionIRI <urn:absolute:CountryInfoOntology/2.0.0> ;
-                                    rdfs:comment "Here is an ontology of locations, modified from a capstone project under a senior ontologist. Information is included on countries, currency, neighbors, ISO codes, area in sq km, and population." .
+                                    rdfs:comment "Here is an ontology of locations, modified from a capstone project under a senior ontologist. Information is included on countries, currency, neighbors, ISO codes, area in sq km, and population." ,
+                                                 """The data set used to build this ontology does not include U.S. states. It also relates only one continent to each country (the primary continent with which the country is associated). 
+
+The axioms in this ontology reflect these limitations. For instance, to avoid inconsistency, the equivalences for the \"Country\" class would need to be changed if Turkey were to be related to multiple continents.""" .
 
 #################################################################
 #    Object Properties
@@ -19,7 +22,7 @@
 CountryInfoOntology:hasCapital rdf:type owl:ObjectProperty ;
                                rdfs:domain CountryInfoOntology:Country ;
                                rdfs:range CountryInfoOntology:Capital ;
-                               rdfs:comment "Property indicating a country's capital." ;
+                               rdfs:comment "Property relating a country to its capital." ;
                                rdfs:label "has Capital" .
 
 
@@ -27,7 +30,7 @@ CountryInfoOntology:hasCapital rdf:type owl:ObjectProperty ;
 CountryInfoOntology:hasContinent rdf:type owl:ObjectProperty ;
                                  rdfs:domain CountryInfoOntology:Country ;
                                  rdfs:range CountryInfoOntology:Continent ;
-                                 rdfs:comment "Property indicating the primary continent of a country. (Some countries have land within multiple continents, but this property specifies the main continent affiliated with the country.)" ;
+                                 rdfs:comment "Property relating a country to its continent." ;
                                  rdfs:label "has Continent" .
 
 
@@ -35,7 +38,7 @@ CountryInfoOntology:hasContinent rdf:type owl:ObjectProperty ;
 CountryInfoOntology:hasCurrency rdf:type owl:ObjectProperty ;
                                 rdfs:domain CountryInfoOntology:Country ;
                                 rdfs:range CountryInfoOntology:Currency ;
-                                rdfs:comment "Property indicating a country's official currency." ;
+                                rdfs:comment "Property relating a country to its official currency." ;
                                 rdfs:label "has Currency" .
 
 
